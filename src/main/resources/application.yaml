@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: user_auth2
+
+  datasource:
+    url: ${USER_AUTH2_POSTGRES_URL}
+    username: ${USER_AUTH2_POSTGRES_USERNAME}
+    password: ${USER_AUTH2_POSTGRES_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+springdoc:
+  api-docs:
+    enabled: true
