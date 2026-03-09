@@ -3,7 +3,7 @@ package com.jaanu.user_auth2.service.Impl;
 import com.jaanu.user_auth2.entity.User;
 import com.jaanu.user_auth2.repository.UserRepository;
 import com.jaanu.user_auth2.service.UserService;
-import com.jaanu.user_auth2.service.dto.UserCreateRequest;
+import com.jaanu.user_auth2.service.dto.SignupRequest;
 import com.jaanu.user_auth2.service.dto.UserUpdateRequest;
 import com.jaanu.user_auth2.service.dto.UserViewDTO;
 import com.jaanu.user_auth2.service.mapper.UserMapper;
@@ -16,11 +16,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements UserService {
 
+
     private UserRepository userRepository;
 
     @Override
     @Transactional
-    public UserViewDTO createUser(UserCreateRequest userCreateRequest) {
+    public UserViewDTO createUser(SignupRequest userCreateRequest) {
         User user = UserMapper.mapUserCreateRequestToUser(userCreateRequest);
         User savedUser = userRepository.save(user);
 
