@@ -5,6 +5,7 @@ import com.jaanu.user_auth2.enums.UserRole;
 import java.util.Map;
 
 public record SignupResponse(
+        String token,
         String firstname,
         String lastname,
         String email,
