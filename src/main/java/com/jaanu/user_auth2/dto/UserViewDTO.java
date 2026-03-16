@@ -1,14 +1,22 @@
-package com.jaanu.user_auth2.api.dto;
+package com.jaanu.user_auth2.dto;
 
 import com.jaanu.user_auth2.enums.UserRole;
+
+import java.util.HashMap;
 import java.util.Map;
 
-public record LoginResponse(
-        String token,
+public record UserViewDTO(
+
         String firstname,
         String lastname,
         String email,
         String username,
         UserRole role,
         Map<String, Object> attributes
-) {}
+) {
+    public UserViewDTO {
+        if (attributes == null) {
+            attributes = new HashMap<>();
+        }
+    }
+}

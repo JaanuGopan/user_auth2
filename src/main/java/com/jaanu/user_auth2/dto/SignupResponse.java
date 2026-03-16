@@ -1,4 +1,4 @@
-package com.jaanu.user_auth2.api.dto;
+package com.jaanu.user_auth2.dto;
 
 import com.jaanu.user_auth2.enums.UserRole;
 

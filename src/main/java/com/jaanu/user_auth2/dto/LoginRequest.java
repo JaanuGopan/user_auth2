@@ -1,4 +1,4 @@
-package com.jaanu.user_auth2.service.dto;
+package com.jaanu.user_auth2.dto;
 
 public record LoginRequest(
         String username,

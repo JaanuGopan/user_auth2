@@ -1,10 +1,10 @@
 package com.jaanu.user_auth2.api.controller;
 
-import com.jaanu.user_auth2.api.dto.LoginResponse;
-import com.jaanu.user_auth2.api.dto.SignupResponse;
+import com.jaanu.user_auth2.dto.LoginResponse;
+import com.jaanu.user_auth2.dto.SignupResponse;
 import com.jaanu.user_auth2.service.AuthService;
-import com.jaanu.user_auth2.service.dto.LoginRequest;
-import com.jaanu.user_auth2.service.dto.SignupRequest;
+import com.jaanu.user_auth2.dto.LoginRequest;
+import com.jaanu.user_auth2.dto.SignupRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

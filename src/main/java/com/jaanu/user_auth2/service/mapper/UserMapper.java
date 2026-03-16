@@ -1,9 +1,9 @@
 package com.jaanu.user_auth2.service.mapper;
 
 import com.jaanu.user_auth2.entity.User;
-import com.jaanu.user_auth2.service.dto.SignupRequest;
-import com.jaanu.user_auth2.service.dto.UserUpdateRequest;
-import com.jaanu.user_auth2.service.dto.UserViewDTO;
+import com.jaanu.user_auth2.dto.SignupRequest;
+import com.jaanu.user_auth2.dto.UserUpdateRequest;
+import com.jaanu.user_auth2.dto.UserViewDTO;
 
 public class UserMapper {
 
